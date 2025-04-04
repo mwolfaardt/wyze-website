@@ -11,5 +11,5 @@ WORKDIR /usr/share/nginx/html
 EXPOSE 80
 
 # Copy the index.html file from the html folder
-COPY html/index.html /usr/share/nginx/html/index.html
+COPY ./html/index.html /usr/share/nginx/html/index.html
 CMD ["nginx", "-g", "daemon off;"]
